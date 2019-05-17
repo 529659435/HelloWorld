@@ -32,6 +32,12 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @GetMapping(value = "/helloJenkins")
+    public String helloJenkins(){
+        return "helloJenkins";
+    }
+
+
     @GetMapping(value = "/getUser")
     public List<User> getAllUser(){
         return userService.getAllUser();
