@@ -37,6 +37,7 @@ public class UserController {
         return userService.getAllUser();
     }
 
+
     @PostMapping(value = "/insert")
     public void insert(@Param("id") int id,
                        @RequestParam("user_name") String username,
