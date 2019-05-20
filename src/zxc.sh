@@ -41,4 +41,4 @@ mv csDemo.war ROOT.war
 #启动Tomcat
 cd $TOMCAT_APP_PATH/
 sh bin/startup.sh
-#测试自动获取1.1
+#测试自动获取1.2
