@@ -11,9 +11,9 @@
 ### base函数
 killTomcat()
 {
-    pid=`ps -ef|grep tomcat |grep java|awk '{print $2}'`
+    pid =`ps -ef|grep tomcat |grep java|awk `{print $2}``
     echo "tomcat Id list :$pid"
-    if ["$pid"= ""]
+    if ["$pid"== ""]
     then
         echo "no tomcat pid alive"
     else
@@ -34,7 +34,7 @@ rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
 rm -f $TOMCAT_APP_PATH/webapps/mybatis.war
 
 # 复制新的工程
-cp $PROJ_PATH/csDemo/target/*.war $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH/test1/csDemo/target/*.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 mv *.war ROOT.war
