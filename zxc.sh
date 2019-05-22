@@ -17,6 +17,7 @@ killTomcat()
     then
         echo "no tomcat pid alive"
     else
+        echo "$pid"
         kill -9 $pid
     fi
 }
