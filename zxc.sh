@@ -44,11 +44,5 @@ mv *.war ROOT.war
 cd $TOMCAT_APP_PATH/
 sh bin/startup.sh
 
-if [ $? -ne 0 ]; then
-    echo "FAILED"
-else
-    echo "SUCCEED"
-fi
-
-#测试自动获取1.1
+#测试自动获取1.2
 
