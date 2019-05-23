@@ -50,5 +50,5 @@ else
     echo "SUCCEED"
 fi
 
-#测试自动获取1.0
+#测试自动获取1.1
 
